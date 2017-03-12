@@ -1,0 +1,8 @@
+D:\NhiHo\C#\Bai4 - Tab Control\Bai4 - Tab Control\bin\Debug\Bai4 - Tab Control.exe
+D:\NhiHo\C#\Bai4 - Tab Control\Bai4 - Tab Control\bin\Debug\Bai4 - Tab Control.pdb
+D:\NhiHo\C#\Bai4 - Tab Control\Bai4 - Tab Control\obj\x86\Debug\Bai4___Tab_Control.Form1.resources
+D:\NhiHo\C#\Bai4 - Tab Control\Bai4 - Tab Control\obj\x86\Debug\Bai4___Tab_Control.Properties.Resources.resources
+D:\NhiHo\C#\Bai4 - Tab Control\Bai4 - Tab Control\obj\x86\Debug\Bai4 - Tab Control.csproj.GenerateResource.Cache
+D:\NhiHo\C#\Bai4 - Tab Control\Bai4 - Tab Control\obj\x86\Debug\Bai4 - Tab Control.exe
+D:\NhiHo\C#\Bai4 - Tab Control\Bai4 - Tab Control\obj\x86\Debug\Bai4 - Tab Control.pdb
+D:\NhiHo\C#\Bai4 - Tab Control\Bai4 - Tab Control\obj\x86\Debug\Bai4 - Tab Control.csprojResolveAssemblyReference.cache
