@@ -49,11 +49,11 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.dgvLop = new System.Windows.Forms.DataGridView();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.btnXoaLop = new System.Windows.Forms.Button();
+            this.btnTaoMoiLop = new System.Windows.Forms.Button();
+            this.btnCapNhatLop = new System.Windows.Forms.Button();
+            this.btnLuuLop = new System.Windows.Forms.Button();
+            this.btnHienThiLop = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.txtTenLop = new System.Windows.Forms.TextBox();
             this.txtKhoa = new System.Windows.Forms.TextBox();
@@ -294,60 +294,62 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.button6);
-            this.panel8.Controls.Add(this.button7);
-            this.panel8.Controls.Add(this.button8);
-            this.panel8.Controls.Add(this.button9);
-            this.panel8.Controls.Add(this.button10);
+            this.panel8.Controls.Add(this.btnXoaLop);
+            this.panel8.Controls.Add(this.btnTaoMoiLop);
+            this.panel8.Controls.Add(this.btnCapNhatLop);
+            this.panel8.Controls.Add(this.btnLuuLop);
+            this.panel8.Controls.Add(this.btnHienThiLop);
             this.panel8.Location = new System.Drawing.Point(309, 4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(163, 111);
             this.panel8.TabIndex = 1;
             // 
-            // button6
+            // btnXoaLop
             // 
-            this.button6.Location = new System.Drawing.Point(40, 83);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 13;
-            this.button6.Text = "Xóa";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnXoaLop.Location = new System.Drawing.Point(40, 83);
+            this.btnXoaLop.Name = "btnXoaLop";
+            this.btnXoaLop.Size = new System.Drawing.Size(75, 23);
+            this.btnXoaLop.TabIndex = 13;
+            this.btnXoaLop.Text = "Xóa";
+            this.btnXoaLop.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btnTaoMoiLop
             // 
-            this.button7.Location = new System.Drawing.Point(3, 8);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 14;
-            this.button7.Text = "Tạo Mới";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnTaoMoiLop.Location = new System.Drawing.Point(3, 8);
+            this.btnTaoMoiLop.Name = "btnTaoMoiLop";
+            this.btnTaoMoiLop.Size = new System.Drawing.Size(75, 23);
+            this.btnTaoMoiLop.TabIndex = 14;
+            this.btnTaoMoiLop.Text = "Tạo Mới";
+            this.btnTaoMoiLop.UseVisualStyleBackColor = true;
+            this.btnTaoMoiLop.Click += new System.EventHandler(this.btnTaoMoiLop_Click);
             // 
-            // button8
+            // btnCapNhatLop
             // 
-            this.button8.Location = new System.Drawing.Point(3, 45);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 12;
-            this.button8.Text = "Cập Nhật";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnCapNhatLop.Location = new System.Drawing.Point(3, 45);
+            this.btnCapNhatLop.Name = "btnCapNhatLop";
+            this.btnCapNhatLop.Size = new System.Drawing.Size(75, 23);
+            this.btnCapNhatLop.TabIndex = 12;
+            this.btnCapNhatLop.Text = "Cập Nhật";
+            this.btnCapNhatLop.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // btnLuuLop
             // 
-            this.button9.Location = new System.Drawing.Point(84, 8);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
-            this.button9.TabIndex = 11;
-            this.button9.Text = "Lưu";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btnLuuLop.Location = new System.Drawing.Point(84, 8);
+            this.btnLuuLop.Name = "btnLuuLop";
+            this.btnLuuLop.Size = new System.Drawing.Size(75, 23);
+            this.btnLuuLop.TabIndex = 11;
+            this.btnLuuLop.Text = "Lưu";
+            this.btnLuuLop.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // btnHienThiLop
             // 
-            this.button10.Location = new System.Drawing.Point(84, 45);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
-            this.button10.TabIndex = 10;
-            this.button10.Text = "Hiển Thị";
-            this.button10.UseVisualStyleBackColor = true;
+            this.btnHienThiLop.Location = new System.Drawing.Point(84, 45);
+            this.btnHienThiLop.Name = "btnHienThiLop";
+            this.btnHienThiLop.Size = new System.Drawing.Size(75, 23);
+            this.btnHienThiLop.TabIndex = 10;
+            this.btnHienThiLop.Text = "Hiển Thị";
+            this.btnHienThiLop.UseVisualStyleBackColor = true;
+            this.btnHienThiLop.Click += new System.EventHandler(this.btnHienThiLop_Click);
             // 
             // panel7
             // 
@@ -383,6 +385,7 @@
             this.cboKhoa.Name = "cboKhoa";
             this.cboKhoa.Size = new System.Drawing.Size(201, 21);
             this.cboKhoa.TabIndex = 3;
+            this.cboKhoa.SelectedIndexChanged += new System.EventHandler(this.cboKhoa_SelectedIndexChanged);
             // 
             // label10
             // 
@@ -674,11 +677,11 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dgvLop;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button btnXoaLop;
+        private System.Windows.Forms.Button btnTaoMoiLop;
+        private System.Windows.Forms.Button btnCapNhatLop;
+        private System.Windows.Forms.Button btnLuuLop;
+        private System.Windows.Forms.Button btnHienThiLop;
         private System.Windows.Forms.DataGridView dgvSV;
         private System.Windows.Forms.TextBox txtTenLop;
         private System.Windows.Forms.TextBox txtKhoa;

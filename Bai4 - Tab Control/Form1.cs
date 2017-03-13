@@ -35,10 +35,10 @@ namespace Bai4___Tab_Control
         /// <param name="e"></param>
         /// 
 
-        private void LoadDL()
+        private void LoadDLKhoa()
         {
             cn = new SqlConnection(conmstring);
-            
+            SQL = "SELECT * FROM Khoa";
             da = new SqlDataAdapter(SQL, cn);
             ds = new DataSet("Khoa");
             da.Fill(ds, "Khoa");
@@ -46,12 +46,6 @@ namespace Bai4___Tab_Control
             dgvKhoa.DataMember = "Khoa";
             cn.Close();
             cn.Dispose();
-        }
-
-        private void LoadDLKhoa()
-        {
-            SQL = "SELECT * FROM Khoa";
-            LoadDLKhoa();
         }
 
         private void dgvKhoa_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -86,7 +80,7 @@ namespace Bai4___Tab_Control
 
         private void btnHienThiKhoa_Click(object sender, EventArgs e)
         {
-            LoadDL();
+            LoadDLKhoa();
         }
 
         private void btnLuuKhoa_Click(object sender, EventArgs e)
@@ -96,7 +90,7 @@ namespace Bai4___Tab_Control
             SqlCommand cmd = new SqlCommand(SQL, cn);
             cn.Open();
             cmd.ExecuteNonQuery();
-            LoadDL();
+            LoadDLKhoa();
             cn.Close();
             cn.Dispose();
         }
@@ -110,7 +104,7 @@ namespace Bai4___Tab_Control
                 SqlCommand cmd = new SqlCommand(SQL, cn);
                 cn.Open();
                 cmd.ExecuteNonQuery();
-                LoadDL();
+                LoadDLKhoa();
                 cn.Close();
                 cn.Dispose();
             }
@@ -130,11 +124,57 @@ namespace Bai4___Tab_Control
                 SqlCommand cmd = new SqlCommand(SQL, cn);
                 cn.Open();
                 cmd.ExecuteNonQuery();
-                LoadDL();
+                LoadDLKhoa();
                 cn.Close();
                 cn.Dispose();
             }
         }
+
+        /// <summary>
+        /// Tab Lop
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+
+        private void LoadDLLop()
+        {
+ 
+        }
+        private void btnHienThiLop_Click(object sender, EventArgs e)
+        {
+            SQL = "SELECT * FROM Lop";
+            dgvLop.DataSource = ds;
+            dgvLop.DataMember = "Khoa";
+            LoadDLLop();
+        }
+
+        private void btnTaoMoiLop_Click(object sender, EventArgs e)
+        {
+            
+            txtKhoa.Clear();
+            txtTenLop.Clear();
+            btnCapNhatLop.Enabled = true;
+            btnLuuLop.Enabled = true;
+            btnXoaLop.Enabled = false;
+        }
+
+        private void cboKhoa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cn = new SqlConnection(conmstring);
+            SQL = "SELECT * FROM Khoa";
+            da = new SqlDataAdapter(SQL, cn); //lấy dữ liệu về
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            cboKhoa.DataSource = dt;//gán dữ liệu nguồn
+            cboKhoa.ValueMember = "MaKhoa";//dùng để lọc dữ liệu
+            cboKhoa.DisplayMember = "TenKhoa";//gán trường hiển thị trên combobox
+            cn.Close();
+            cn.Dispose();
+        }
+
+        
+
+        
 
 
 
